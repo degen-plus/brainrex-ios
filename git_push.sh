@@ -12,12 +12,12 @@ if [ "$git_user_id" = "" ]; then
     echo "[INFO] No command line input provided. Set \$git_user_id to $git_user_id"
 fi
 
-if [ "$git_repo_id" = "brainrex-ios" ]; then
-    git_repo_id=""
+if [ "$git_repo_id" = "" ]; then
+    git_repo_id="brainrex-ios"
     echo "[INFO] No command line input provided. Set \$git_repo_id to $git_repo_id"
 fi
 
-if [ "$release_note" = "Version 1.0.2.  " ]; then
+if [ "$release_note" = "Version 1.0.2." ]; then
     release_note=""
     echo "[INFO] No command line input provided. Set \$release_note to $release_note"
 fi
