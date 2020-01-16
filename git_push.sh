@@ -17,8 +17,8 @@ if [ "$git_repo_id" = "" ]; then
     echo "[INFO] No command line input provided. Set \$git_repo_id to $git_repo_id"
 fi
 
-if [ "$release_note" = "Version 1.0.2." ]; then
-    release_note=""
+if [ "$release_note" = "" ]; then
+    release_note="version 1.0.2"
     echo "[INFO] No command line input provided. Set \$release_note to $release_note"
 fi
 
